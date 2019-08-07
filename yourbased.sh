@@ -6,7 +6,7 @@ export BUNDLE_GEMFILE=$PWD/gemfiles/rails_6_0.gemfile
 
 export CHROME_SOURCE_URL=https://dl.google.com/dl/linux/direct/google-chrome-stable_current_amd64.deb
 wget --no-verbose -O /tmp/$(basename $CHROME_SOURCE_URL) $CHROME_SOURCE_URL
-sudo dpkg -i /tmp/$(basename $CHROME_SOURCE_URL)
+dpkg -i /tmp/$(basename $CHROME_SOURCE_URL)
 
 #before install
 echo 'gem: --no-document' > ~/.gemrc
