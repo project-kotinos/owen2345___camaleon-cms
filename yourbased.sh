@@ -4,6 +4,9 @@ set -ex
 export DEBIAN_FRONTEND=noninteractive
 export BUNDLE_GEMFILE=$PWD/gemfiles/rails_6_0.gemfile
 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+
 #before install
 echo 'gem: --no-document' > ~/.gemrc
 echo '--colour' > ~/.rspec
