@@ -5,6 +5,7 @@ export DEBIAN_FRONTEND=noninteractive
 export BUNDLE_GEMFILE=$PWD/gemfiles/rails_6_0.gemfile
 
 
+
 apt-get install -y gdebi-core
 export CHROME_SOURCE_URL=https://dl.google.com/dl/linux/direct/google-chrome-stable_current_amd64.deb
 wget --no-verbose -O /tmp/$(basename $CHROME_SOURCE_URL) $CHROME_SOURCE_URL
@@ -13,7 +14,9 @@ gdebi --n /tmp/$(basename $CHROME_SOURCE_URL)
 #before install
 echo 'gem: --no-document' > ~/.gemrc
 echo '--colour' > ~/.rspec
+
 export DISPLAY=:99.0
+xdpyinfo -display $DISPLAY > /dev/null || Xvfb $DISPLAY -screen 0 1024x768x16 &
 
 #install
 gem install bundler
