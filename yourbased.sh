@@ -2,7 +2,7 @@
 set -ex
 
 export DEBIAN_FRONTEND=noninteractive
-export BUNDLE_GEMFILE=$PWD/gemfiles/rails_4_2.gemfile
+export BUNDLE_GEMFILE=$PWD/gemfiles/rails_6_0.gemfile
 
 #before install
 echo 'gem: --no-document' > ~/.gemrc
