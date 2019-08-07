@@ -10,6 +10,7 @@ echo '--colour' > ~/.rspec
 export DISPLAY=:99.0
 
 #install
+gem install bundler
 bundle install -j4
 
 #script
