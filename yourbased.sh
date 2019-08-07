@@ -5,8 +5,8 @@ export DEBIAN_FRONTEND=noninteractive
 export BUNDLE_GEMFILE=$PWD/gemfiles/rails_4_2.gemfile
 
 #before install
-"echo 'gem: --no-document' > ~/.gemrc"
-"echo '--colour' > ~/.rspec"
+echo 'gem: --no-document' > ~/.gemrc
+echo '--colour' > ~/.rspec
 export DISPLAY=:99.0
 
 #install
