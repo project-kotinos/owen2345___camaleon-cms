@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -ex
 
-systemctl start xvfb
-
 export DEBIAN_FRONTEND=noninteractive
 export BUNDLE_GEMFILE=$PWD/gemfiles/rails_4_2.gemfile
 
