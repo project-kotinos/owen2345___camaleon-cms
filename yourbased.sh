@@ -16,7 +16,7 @@ echo 'gem: --no-document' > ~/.gemrc
 echo '--colour' > ~/.rspec
 
 export DISPLAY=:99.0
-xdpyinfo -display $DISPLAY > /dev/null || Xvfb $DISPLAY -screen 0 1024x768x16 &
+sh -e /etc/init.d/xvfb start
 
 #install
 gem install bundler
