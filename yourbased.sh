@@ -15,8 +15,8 @@ gdebi --n /tmp/$(basename $CHROME_SOURCE_URL)
 echo 'gem: --no-document' > ~/.gemrc
 echo '--colour' > ~/.rspec
 
-export DISPLAY=:99.0
-sh -e /etc/init.d/xvfb start
+# export DISPLAY=:99.0
+# sh -e /etc/init.d/xvfb start
 
 #install
 gem install bundler
