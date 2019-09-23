@@ -54,4 +54,4 @@ bundle install -j4
 bundle update rails
 bundle exec rubocop
 bundle exec rake db:migrate RAILS_ENV=test
-xvfb-run -a bundle exec rspec
+xvfb-run -a bundle exec rake --trace spec
