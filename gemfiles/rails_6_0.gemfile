@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gemspec path: '..'
 
+gem 'yourbase-rspec-skipper'
 gem 'tzinfo-data'
 gem 'rails', '~> 6.0.0rc1'
 gem 'sqlite3'
