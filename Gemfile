@@ -4,7 +4,7 @@ gemspec
 gem 'rails', '6.0.0rc1'
 gem 'selenium-webdriver'
 gem 'webdrivers'
-
+gem 'yourbase-rspec-skipper'
 gem 'capybara-screenshot'
 
 gem 'rspec_junit_formatter'

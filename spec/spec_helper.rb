@@ -12,7 +12,7 @@ require "capybara/rspec"
 require 'database_cleaner'
 require "rack_session_access/capybara"
 require 'capybara-screenshot/rspec'
-
+require 'yourbase/rspec/skipper'
 if defined?(Capybara::Webkit)
   Capybara::Webkit.configure do |config|
     # Enable debug mode. Prints a log of everything the driver is doing.
