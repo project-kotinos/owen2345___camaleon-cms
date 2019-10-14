@@ -1,0 +1,22 @@
+dependencies:
+  build:
+    - ruby:2.6.3
+    - node:10.15.1
+
+build_targets:
+  - name: default
+    environment:
+        - DEBIAN_FRONTEND=noninteractive
+        - BUNDLE_GEMFILE=gemfiles/rails_6_0.gemfile
+    container: 
+      image: yourbase/yb_ubuntu:16.04
+    commands:
+        - apt-get -y update
+        - apt-get install -y gdebi-core xvfb unzip
+        - chmod +x yourbased.sh
+        - ./yourbased.sh
+
+ci:
+  builds:
+    - name: default
+      build_target: default
