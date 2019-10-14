@@ -7,7 +7,7 @@ build_targets:
   - name: default
     environment:
         - DEBIAN_FRONTEND=noninteractive
-        - BUNDLE_GEMFILE=$PWD/gemfiles/rails_6_0.gemfile
+        - BUNDLE_GEMFILE=gemfiles/rails_6_0.gemfile
     container: 
       image: yourbase/yb_ubuntu:16.04
     commands:
