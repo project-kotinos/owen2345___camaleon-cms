@@ -206,3 +206,5 @@ http://camaleon.tuzitio.com/version-history.html
 Previous stable version (v1.x): https://github.com/owen2345/camaleon-cms/tree/version_1x
 
 Camaleon CMS was originally released in July 2015 and tested previously with more than 20 projects by 6 months and on August 22, 2015 was published as a gem.
+
+testing by yves
